@@ -1,0 +1,32 @@
+{
+  "name": "react-express-checker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "nodemon server/index.js",
+    "dev:client": "vite --host 0.0.0.0 --config client/vite.config.mjs",
+    "build": "npm run build:client",
+    "build:client": "vite build --config client/vite.config.mjs",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.10.9",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "axios": "^1.13.5",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "framer-motion": "^10.18.0",
+    "highlight.js": "^11.11.1",
+    "playwright": "^1.58.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.7",
+    "vite": "^5.4.11"
+  }
+}
