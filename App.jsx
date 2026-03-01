@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useToast } from "@chakra-ui/react";
-import CheckerPage from "./components/CheckerPage/CheckerPage";
-import { showAppToast } from "./lib/appToast";
-
+import CheckerPage from "./CheckerPage";
+import { showAppToast } from "./appToast";
 const MAX_JSON_PAYLOAD_BYTES = 850_000;
 const MAX_CHECKS_PER_REQUEST_CAP = 120;
 const TARGET_REQUEST_RUNTIME_MS = 240_000;
@@ -1018,4 +1017,5 @@ export default function App() {
     />
   );
 }
+
 
