@@ -21,8 +21,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import AppCredits from "../AppCredits/AppCredits";
-import { showAppToast } from "../../lib/appToast";
+import AppCredits from "./AppCredits";
+import { showAppToast } from "./appToast.jsx";
 
 function displayValue(value, fallback = "N/A") {
   if (value == null) return fallback;
